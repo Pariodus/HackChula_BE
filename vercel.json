@@ -1,0 +1,16 @@
+{
+   "version": 2,
+   "name": "library-reservation",
+   "builds" : [
+      {
+         "src" : "server.js",
+         "use" : "@vercel/node"
+      }
+   ],
+   "routes" : [
+      {
+         "src" : "/(.*)",
+         "dest" : "server.js"
+      }
+   ]
+}
